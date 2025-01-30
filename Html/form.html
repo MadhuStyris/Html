@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bank</title>
+<style>
+form {
+            border: 2px solid #000;
+            padding: 25px;        
+            width: 1000px;          
+            margin: 0 auto;        
+            border-radius: 10px;    
+            background-color: #ADD8E6;
+        }
+</style>
+</head>
+<body>
+<form autocomplete="off">
+<h2 align="center">Bank Account Opening Form</h2>
+<fieldset>
+<legend><b>Personal Information<b></legend>
+<label>FullName:</label>
+<select name="prefix">
+<option>Mr.</option>
+<option>Mrs.</option>
+<option>Ms.</option>
+</select>
+<input type="text"value=""placeholder="FirstName"required autocomplete="on">
+<input type="text"value=""placeholder="LastName"required><br><br>
+<label>Date of Birth:</label>
+<input type="date"required>&nbsp&nbsp&nbsp
+<label>Gender:</label>
+<input type="radio"name="gender"value="Male">
+<label><small>Male</small></label>
+<input type="radio"name="gender"value="Female">
+<label><small>Female</small></label><br><br>
+<label>Phone Number:</label>
+<input type="tel"pattern="[0-9]{5}[0-9]{5}"placeholder="Enter your phone number"required><br><br>
+<label>Email-id:</label>
+<input type="email"value=""placeholder="Enter your Email-id"required>
+</fieldset>
+<fieldset>
+<legend>Address Information</legend>
+<label for="address">Address:</label><br>
+<textarea id="address" name="address" rows="4" cols="50"placeholder="Enter your Address"required></textarea><br>
+<label>Pincode:</label>
+<input type="text"pattern="[0-9]{6}"placeholder="Enter pincode"required>&nbsp&nbsp&nbsp
+</fieldset>
+<fieldset>
+<legend>Account Details</legend>
+<label>Account Type:</label>
+<input type="checkbox"name="acc"value="Savings">
+<label>Savings</label>
+<input type="checkbox"name="acc"value="Checking">
+<label>Checking</label>
+<input type="checkbox"name="acc"value="Business">
+<label>Business</label><br><br>
+<label>Initial Deposit:</label>
+<input type="number"placeholder="100-10000"min="100"max="10000"required><br>
+</fieldset><br>
+<input type="submit"value="Submit">
+</form>
+</body>
+</html>
