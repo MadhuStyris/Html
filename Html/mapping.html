@@ -4,39 +4,67 @@
         <link rel="stylesheet" href="mapstyle.css">
     </head>
     <body>
+        <div id="pages" >
         <div class="map1"><img src="mapsimg.jpg" usemap="#indiamap" class="image1"></div>
+        <div id="wiki-content">
+            <p></p>
+        </div>
+        </div> 
         <map name="indiamap">
-        <area title="Leh" href="https://en.wikipedia.org/wiki/Ladakh" coords="177,47,190,55,202,70,212,75,221,81,236,97,251,113,261,127,276,139,296,147,310,151,316,153,322,148,314,137,306,126,310,118,320,108,329,99,340,88,339,73,318,66,301,73,274,75,256,52,237,39,223,31,199,34" shape="poly">
-        <area title="Srinagar" href="https://en.wikipedia.org/wiki/Jammu_and_Kashmir_(union_territory)" coords="214,85,193,98,197,117,199,133,214,140,225,149,237,150,241,139,250,131,234,110" shape="poly">
-        <area title="Shimla" href="https://en.wikipedia.org/wiki/Himachal_Pradesh" coords="254,141,241,164,250,183,266,199,279,215,290,190,306,187,303,174,299,160,280,148" shape="poly">
-        <area title="Chandigarh" href="https://en.wikipedia.org/wiki/Punjab,_India" coords="232,168,213,177,219,194,201,203,198,218,214,218,225,225,240,224,250,215,261,205,243,187" shape="poly">
-        <area title="Dehradun" href="https://en.wikipedia.org/wiki/Uttarakhand" coords="293,200,290,210,294,229,305,233,314,246,328,254,338,253,340,238,347,228,354,219,334,204,317,193" shape="poly">
-        <area title="Chandigarh" href="https://en.wikipedia.org/wiki/Haryana" coords="212,228,216,235,230,239,233,259,246,269,260,269,240,233,252,227,264,217,272,217,266,234,265,246,259,251,257,257,269,279,272,271,238,241" shape="poly">
-        <area title="Lucknow" href="https://en.wikipedia.org/wiki/Uttar_Pradesh" coords="284,218,273,230,273,251,281,266,280,278,278,289,283,304,300,307,319,318,315,335,312,346,327,352,341,350,356,355,374,356,393,366,405,371,406,384,414,386,414,372,409,358,424,347,434,340,429,326,435,313,422,304,390,296,354,271,317,256,298,238" shape="poly">
-        <area title="Jaipur" href="https://en.wikipedia.org/wiki/Rajasthan" coords="187,223,172,244,142,271,107,280,100,275,85,295,100,303,98,321,110,334,117,352,146,358,166,368,174,383,190,401,198,392,200,366,211,351,223,353,234,363,236,377,253,375,253,363,244,341,261,322,277,314,266,291,236,279,220,247" shape="poly">
-        <area title="Patna" href="https://en.wikipedia.org/wiki/Bihar" coords="438,304,450,320,438,329,451,342,434,354,423,368,452,371,473,365,500,372,505,357,521,348,521,329,473,324" shape="poly">
-        <area title="Gangtok" href="https://en.wikipedia.org/wiki/Sikkim" coords="537,286,531,296,536,301,544,299,545,285" shape="poly">
-        <area title="Itanagar" href="https://en.wikipedia.org/wiki/Arunachal_Pradesh" coords="625,288,636,302,657,298,674,286,704,273,719,273,720,289,709,301,736,283,744,266,723,262,720,241,686,245" shape="poly">
-        <area title="Dispur" href="https://en.wikipedia.org/wiki/Assam" coords="580,318,577,335,600,331,625,325,640,329,649,337,650,350,641,367,645,374,652,360,659,342,674,323,692,304,704,290,709,282,684,291,662,307,625,310" shape="poly">
-        <area title="Kohima" href="https://en.wikipedia.org/wiki/Nagaland" coords="702,307,685,317,677,329,667,341,686,338,697,334" shape="poly">
-        <area title="Imphal" href="https://en.wikipedia.org/wiki/Manipur" coords="676,346,665,354,660,369,672,378,682,381,688,361,686,349" shape="poly">
-        <area title="Aizawl" href="https://en.wikipedia.org/wiki/Mizoram" coords="650,378,642,390,646,403,649,417,657,432,658,416,662,403,660,387" shape="poly">
-        <area title="Agartala" href="https://en.wikipedia.org/wiki/Tripura" coords="634,378,623,386,617,400,625,406,636,387" shape="poly">
-        <area title="Shillong" href="https://en.wikipedia.org/wiki/Meghalaya" coords="581,341,584,352,608,352,626,352,638,352,643,344,628,335" shape="poly">
-        <area title="Kolkata" href="https://en.wikipedia.org/wiki/West_Bengal" coords="568,322,557,313,542,306,534,323,532,342,532,366,524,389,498,406,488,414,505,428,524,450,534,439,544,436,545,448,561,449,546,402,537,380,547,386,537,356,549,352,530,335,540,323,562,326" shape="poly">
-        <area title="Ranchi" href="https://en.wikipedia.org/wiki/Jharkhand" coords="422,380,436,395,448,417,445,432,462,427,469,438,482,434,486,427,501,432,483,418,475,406,509,391,527,371,524,358,507,376,483,374,458,383" shape="poly">
-        <area title="Bhopal" href="https://en.wikipedia.org/wiki/Madhya_Pradesh" coords="217,361,210,381,211,397,197,415,190,435,210,449,230,455,242,462,258,444,274,448,286,455,302,451,324,451,348,456,350,439,366,429,383,413,365,404,373,391,398,393,398,377,373,364,352,369,334,360,307,357,312,381,290,382,287,364,293,345,307,341,309,327,303,315,282,321,260,336,252,344,270,346,271,356,261,369,261,385,242,386,229,391,228,373" shape="poly">
-        <area title="Gandhinagar" href="https://en.wikipedia.org/wiki/Gujarat" coords="61,369,48,384,69,403,86,398,101,399,91,412,67,420,70,429,93,457,128,450,133,425,156,420,157,429,150,440,159,480,172,460,177,436,183,417,173,400,156,372,117,364,98,374" shape="poly">
-        <area title="Raipur" href="https://en.wikipedia.org/wiki/Chhattisgarh" coords="378,402,390,413,377,429,356,447,351,470,351,498,360,514,349,523,365,550,387,526,377,501,392,494,397,466,412,462,422,437,440,419,422,395" shape="poly">
-        <area title="Bhubaneswar" href="https://en.wikipedia.org/wiki/Odisha" coords="433,440,421,470,404,472,399,497,411,500,387,504,397,526,377,550,390,549,400,533,406,541,423,523,441,528,473,508,507,479,503,459,518,452,492,436,471,451,463,441" shape="poly">
-        <area title="Mumbai" href="https://en.wikipedia.org/wiki/Maharashtra" coords="149,488,149,511,152,529,156,566,164,601,178,605,178,592,196,576,215,574,214,564,236,563,258,541,268,536,272,524,282,512,291,501,308,503,329,507,335,526,341,515,351,513,340,503,342,479,342,463,313,456,292,456,268,463,266,453,241,471,225,460,196,452,184,445,173,479" shape="poly">
-        <area title="Hyderabad" href="https://en.wikipedia.org/wiki/Telangana" coords="293,504,290,518,281,524,274,559,269,589,273,605,299,592,330,575,358,562,344,541,325,532,325,516" shape="poly">
-        <area title="Panaji" href="https://en.wikipedia.org/wiki/Goa" coords="168,613,174,626,177,616,169,620" shape="poly">
-        <area title="Banglore" href="https://en.wikipedia.org/wiki/Karnataka" coords="262,545,244,565,223,569,220,579,200,582,186,603,181,632,193,684,238,721,261,713,268,690,287,690,276,669,287,679,256,668,241,648,251,613,258,598,259,574" shape="poly">
-        <area title="Amaravati" href="https://en.wikipedia.org/wiki/Andhra_Pradesh" coords="439,538,428,530,411,549,393,555,365,565,341,583,327,589,278,613,261,611,253,643,267,662,292,674,294,686,333,672,331,628,350,607,359,610,365,597,383,597,388,583" shape="poly">
-        <area title="Chennai" href="https://en.wikipedia.org/wiki/Tamil_Nadu" coords="234,726,246,743,246,759,256,758,257,778,258,793,253,812,264,822,278,799,294,791,306,767,322,759,319,723,333,695,334,680,300,690,289,703,276,694,268,705,272,713,255,724,320,741,246,722" shape="poly">
-        <area title="Thiruvananthapuram" href="https://en.wikipedia.org/wiki/Kerala" coords="194,695,216,734,228,773,235,799,249,813,249,798,254,785,250,767,240,763,238,743,226,730,221,716" shape="poly">
-        <area title="Sri Jayawardenepura Kotte" href="https://en.wikipedia.org/wiki/Sri_Lanka" coords="335,790,331,806,324,825,324,848,332,877,341,885,378,870,377,848,358,815,346,793" shape="poly">
+        <area title="Leh" onclick="loadWikiContent(event, 'Ladakh')"coords="177,47,190,55,202,70,212,75,221,81,236,97,251,113,261,127,276,139,296,147,310,151,316,153,322,148,314,137,306,126,310,118,320,108,329,99,340,88,339,73,318,66,301,73,274,75,256,52,237,39,223,31,199,34" shape="poly">
+        <area title="Srinagar" onclick="loadWikiContent(event,'Jammu and Kashmir (union territory)')" coords="214,85,193,98,197,117,199,133,214,140,225,149,237,150,241,139,250,131,234,110" shape="poly">
+        <area title="Shimla" onclick="loadWikiContent(event,'Himachal Pradesh')" coords="254,141,241,164,250,183,266,199,279,215,290,190,306,187,303,174,299,160,280,148" shape="poly">
+        <area title="Chandigarh" onclick="loadWikiContent(event,'Punjab')"coords="232,168,213,177,219,194,201,203,198,218,214,218,225,225,240,224,250,215,261,205,243,187" shape="poly">
+        <area title="Dehradun" onclick="loadWikiContent(event,'Uttarkhand')" coords="293,200,290,210,294,229,305,233,314,246,328,254,338,253,340,238,347,228,354,219,334,204,317,193" shape="poly">
+        <area title="Chandigarh" onclick="loadWikiContent(event,'Haryana')" coords="212,228,216,235,230,239,233,259,246,269,260,269,240,233,252,227,264,217,272,217,266,234,265,246,259,251,257,257,269,279,272,271,238,241" shape="poly">
+        <area title="Lucknow" onclick="loadWikiContent(event,'Uttar Pradesh')" coords="284,218,273,230,273,251,281,266,280,278,278,289,283,304,300,307,319,318,315,335,312,346,327,352,341,350,356,355,374,356,393,366,405,371,406,384,414,386,414,372,409,358,424,347,434,340,429,326,435,313,422,304,390,296,354,271,317,256,298,238" shape="poly">
+        <area title="Jaipur" onclick="loadWikiContent(event,'Rajasthan')" coords="187,223,172,244,142,271,107,280,100,275,85,295,100,303,98,321,110,334,117,352,146,358,166,368,174,383,190,401,198,392,200,366,211,351,223,353,234,363,236,377,253,375,253,363,244,341,261,322,277,314,266,291,236,279,220,247" shape="poly">
+        <area title="Patna" onclick="loadWikiContent(event,'Bihar')" coords="438,304,450,320,438,329,451,342,434,354,423,368,452,371,473,365,500,372,505,357,521,348,521,329,473,324" shape="poly">
+        <area title="Gangtok" onclick="loadWikiContent(event,'Sikkim')" coords="537,286,531,296,536,301,544,299,545,285" shape="poly">
+        <area title="Itanagar" onclick="loadWikiContent(event,'Arunachal Pradesh')" coords="625,288,636,302,657,298,674,286,704,273,719,273,720,289,709,301,736,283,744,266,723,262,720,241,686,245" shape="poly">
+        <area title="Dispur" onclick="loadWikiContent(event,'Assam')" coords="580,318,577,335,600,331,625,325,640,329,649,337,650,350,641,367,645,374,652,360,659,342,674,323,692,304,704,290,709,282,684,291,662,307,625,310" shape="poly">
+        <area title="Kohima" onclick="loadWikiContent(event,'Nagaland')" coords="702,307,685,317,677,329,667,341,686,338,697,334" shape="poly">
+        <area title="Imphal" onclick="loadWikiContent(event,'Manipur')" coords="676,346,665,354,660,369,672,378,682,381,688,361,686,349" shape="poly">
+        <area title="Aizawl" onclick="loadWikiContent(event,'Mizoram')" coords="650,378,642,390,646,403,649,417,657,432,658,416,662,403,660,387" shape="poly">
+        <area title="Agartala" onclick="loadWikiContent(event,'Tripura')" coords="634,378,623,386,617,400,625,406,636,387" shape="poly">
+        <area title="Shillong" onclick="loadWikiContent(event,'Meghalaya')" coords="581,341,584,352,608,352,626,352,638,352,643,344,628,335" shape="poly">
+        <area title="Kolkata" onclick="loadWikiContent(event,'West Bengal')" coords="568,322,557,313,542,306,534,323,532,342,532,366,524,389,498,406,488,414,505,428,524,450,534,439,544,436,545,448,561,449,546,402,537,380,547,386,537,356,549,352,530,335,540,323,562,326" shape="poly">
+        <area title="Ranchi" onclick="loadWikiContent(event,'Jharkhand')" coords="422,380,436,395,448,417,445,432,462,427,469,438,482,434,486,427,501,432,483,418,475,406,509,391,527,371,524,358,507,376,483,374,458,383" shape="poly">
+        <area title="Bhopal" onclick="loadWikiContent(event,'Madhya Pradesh')" coords="217,361,210,381,211,397,197,415,190,435,210,449,230,455,242,462,258,444,274,448,286,455,302,451,324,451,348,456,350,439,366,429,383,413,365,404,373,391,398,393,398,377,373,364,352,369,334,360,307,357,312,381,290,382,287,364,293,345,307,341,309,327,303,315,282,321,260,336,252,344,270,346,271,356,261,369,261,385,242,386,229,391,228,373" shape="poly">
+        <area title="Gandhinagar" onclick="loadWikiContent(event,'Gujarat')" coords="61,369,48,384,69,403,86,398,101,399,91,412,67,420,70,429,93,457,128,450,133,425,156,420,157,429,150,440,159,480,172,460,177,436,183,417,173,400,156,372,117,364,98,374" shape="poly">
+        <area title="Raipur" onclick="loadWikiContent(event,'Chhattisgarh')" coords="378,402,390,413,377,429,356,447,351,470,351,498,360,514,349,523,365,550,387,526,377,501,392,494,397,466,412,462,422,437,440,419,422,395" shape="poly">
+        <area title="Bhubaneswar" onclick="loadWikiContent(event,'Odisha')" coords="433,440,421,470,404,472,399,497,411,500,387,504,397,526,377,550,390,549,400,533,406,541,423,523,441,528,473,508,507,479,503,459,518,452,492,436,471,451,463,441" shape="poly">
+        <area title="Mumbai" onclick="loadWikiContent(event,'Maharastra')" coords="149,488,149,511,152,529,156,566,164,601,178,605,178,592,196,576,215,574,214,564,236,563,258,541,268,536,272,524,282,512,291,501,308,503,329,507,335,526,341,515,351,513,340,503,342,479,342,463,313,456,292,456,268,463,266,453,241,471,225,460,196,452,184,445,173,479" shape="poly">
+        <area title="Hyderabad" onclick="loadWikiContent(event,'Telangana')" coords="293,504,290,518,281,524,274,559,269,589,273,605,299,592,330,575,358,562,344,541,325,532,325,516" shape="poly">
+        <area title="Panaji" onclick="loadWikiContent(event,'Goa')" coords="168,613,174,626,177,616,169,620" shape="poly">
+        <area title="Banglore" onclick="loadWikiContent(event,'Karnataka')" coords="262,545,244,565,223,569,220,579,200,582,186,603,181,632,193,684,238,721,261,713,268,690,287,690,276,669,287,679,256,668,241,648,251,613,258,598,259,574" shape="poly">
+        <area title="Amaravati" onclick="loadWikiContent(event,'Andhra Pradesh')" coords="439,538,428,530,411,549,393,555,365,565,341,583,327,589,278,613,261,611,253,643,267,662,292,674,294,686,333,672,331,628,350,607,359,610,365,597,383,597,388,583" shape="poly">
+        <area title="Chennai" onclick="loadWikiContent(event,'Tamil Nadu')" coords="234,726,246,743,246,759,256,758,257,778,258,793,253,812,264,822,278,799,294,791,306,767,322,759,319,723,333,695,334,680,300,690,289,703,276,694,268,705,272,713,255,724,320,741,246,722" shape="poly">
+        <area title="Thiruvananthapuram" onclick="loadWikiContent(event,'Kerala')" coords="194,695,216,734,228,773,235,799,249,813,249,798,254,785,250,767,240,763,238,743,226,730,221,716" shape="poly">
+        <area title="Sri Jayawardenepura Kotte" onclick="loadWikiContent(event,'Sri Lanka')" coords="335,790,331,806,324,825,324,848,332,877,341,885,378,870,377,848,358,815,346,793" shape="poly">
         </map>   
+        <script>
+            function loadWikiContent(event, pageTitle) {
+                //event.preventDefault(); // Stop default link behavior
+                let url = `https://en.wikipedia.org/api/rest_v1/page/summary/${pageTitle}`;
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        let imageUrl = data.thumbnail ? data.thumbnail.source : '';
+                        let imageHTML = imageUrl ? `<img src="${imageUrl}" alt="${data.title}" style="max-width:100%; height:auto; margin-bottom: 15px;" />` : '';
+
+                        document.getElementById("wiki-content").innerHTML = `
+                            ${imageHTML}
+                            <h3>${data.title}</h3>
+                            <p>${data.extract}</p>
+                            <a href="${data.content_urls.desktop.page}" target="_blank">Read more</a>
+                        `;
+                    })
+                    // .catch(error => {
+                    //     console.log("Error fetching Wikipedia content:", error);
+                    //     document.getElementById("wiki-content").innerHTML = "<p>Failed to load content.</p>";
+                    // });
+            }
+        </script>
     </body>
 </html>
